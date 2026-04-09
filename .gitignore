@@ -1,0 +1,57 @@
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+
+# Rust
+target/
+out/
+
+# Local env / secrets
+.env
+.env.*
+!.env.example
+
+# Logs and temp files
+*.log
+*.pid
+*.tmp
+*.swp
+*.swo
+
+# Generated artifacts
+artifacts/logs/
+artifacts/runs/
+artifacts/state/
+artifacts/baselines/
+
+# Trial runtime state
+trial-workspaces/*/.phase-c/
+trial-workspaces/*/build/
+trial-workspaces/*/report.md
+trial-workspaces/*/AGENTS.md
+
+# Nested build outputs inside kept source trees
+trial-workspaces/**/CMakeFiles/
+trial-workspaces/**/CMakeCache.txt
+trial-workspaces/**/cmake_install.cmake
+trial-workspaces/**/Makefile
+trial-workspaces/**/*.o
+trial-workspaces/**/*.obj
+trial-workspaces/**/*.obj.d
+trial-workspaces/**/*.a
+trial-workspaces/**/*.elf
+trial-workspaces/**/*.bin
+trial-workspaces/**/*.map
+trial-workspaces/**/*.i
+trial-workspaces/**/*.s
+
+# Rust user workspace build output
+user/target/

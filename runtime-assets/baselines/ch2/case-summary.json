@@ -1,0 +1,52 @@
+{
+  "chapter": "ch2",
+  "success": true,
+  "match_mode": "ordered",
+  "baseline_repo": "embedded-runtime-assets",
+  "baseline_repo_kind": "embedded",
+  "cases": [
+    {
+      "name": "00hello_world",
+      "order": 0,
+      "patterns": [
+        "Hello, world!",
+        "code 0"
+      ]
+    },
+    {
+      "name": "01store_fault",
+      "order": 1,
+      "patterns": [
+        "Into Test store_fault, we will insert an invalid store operation...",
+        "Kernel should kill this application!",
+        "Exception(StoreFault)"
+      ]
+    },
+    {
+      "name": "02power",
+      "order": 2,
+      "patterns": [
+        "Test power OK!",
+        "code 0"
+      ]
+    },
+    {
+      "name": "03priv_inst",
+      "order": 3,
+      "patterns": [
+        "Try to execute privileged instruction in U Mode",
+        "Kernel should kill this application!",
+        "Exception(IllegalInstruction)"
+      ]
+    },
+    {
+      "name": "04priv_csr",
+      "order": 4,
+      "patterns": [
+        "Try to access privileged CSR in U Mode",
+        "Kernel should kill this application!",
+        "Exception(IllegalInstruction)"
+      ]
+    }
+  ]
+}

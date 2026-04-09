@@ -1,0 +1,147 @@
+Archive member included to satisfy reference by file (symbol)
+
+../../lib/linker/librcore_linker.a(linker.c.obj)
+                              CMakeFiles/rcore_ch5_kernel.dir/src/main.c.obj (rcore_kernel_layout_locate)
+../../lib/linker/librcore_linker.a(app.c.obj)
+                              CMakeFiles/rcore_ch5_kernel.dir/src/main.c.obj (rcore_app_count)
+../../lib/console/librcore_console.a(console.c.obj)
+                              CMakeFiles/rcore_ch5_kernel.dir/src/main.c.obj (init_console)
+../../lib/kernel-context-local/librcore_kernel_context_local.a(kernel_context_local.c.obj)
+                              CMakeFiles/rcore_ch5_kernel.dir/src/main.c.obj (rcore_local_context_user)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+LOAD CMakeFiles/rcore_ch5_kernel.dir/src/main.c.obj
+LOAD CMakeFiles/rcore_ch5_kernel.dir/src/start.S.obj
+LOAD CMakeFiles/rcore_ch5_kernel.dir/__/__/cmake/rt_memory.c.obj
+LOAD CMakeFiles/rcore_ch5_kernel.dir/generated/app.asm.S.obj
+LOAD ../../lib/linker/librcore_linker.a
+LOAD ../../lib/console/librcore_console.a
+LOAD ../../lib/kernel-context-local/librcore_kernel_context_local.a
+
+.text           0x0000000080200000     0x2b30
+                0x0000000080200000                __start = .
+ *(.text.entry)
+ .text.entry    0x0000000080200000        0xe CMakeFiles/rcore_ch5_kernel.dir/src/start.S.obj
+                0x0000000080200000                _start
+ *(.text .text.*)
+ .text          0x000000008020000e     0x203a CMakeFiles/rcore_ch5_kernel.dir/src/main.c.obj
+                0x0000000080201ef2                rust_main
+ .text          0x0000000080202048        0x0 CMakeFiles/rcore_ch5_kernel.dir/src/start.S.obj
+ .text          0x0000000080202048      0x222 CMakeFiles/rcore_ch5_kernel.dir/__/__/cmake/rt_memory.c.obj
+                0x0000000080202048                memcpy
+                0x00000000802020ae                memmove
+                0x0000000080202178                memset
+                0x00000000802021d6                memcmp
+ .text          0x000000008020226a        0x0 CMakeFiles/rcore_ch5_kernel.dir/generated/app.asm.S.obj
+ .text          0x000000008020226a       0xd6 ../../lib/linker/librcore_linker.a(linker.c.obj)
+                0x000000008020226a                rcore_linker_script
+                0x0000000080202280                rcore_kernel_layout_locate
+                0x00000000802022fa                rcore_zero_bss
+ .text          0x0000000080202340      0x360 ../../lib/linker/librcore_linker.a(app.c.obj)
+                0x000000008020238a                rcore_app_count
+                0x00000000802023a2                rcore_app_get
+                0x0000000080202486                rcore_app_meta_valid
+                0x00000000802024b0                rcore_app_iterator_init
+                0x00000000802024fe                rcore_app_iterator_has_next
+                0x00000000802025ea                rcore_app_iterator_load_next
+ .text          0x00000000802026a0       0xe6 ../../lib/console/librcore_console.a(console.c.obj)
+                0x00000000802026c4                init_console
+                0x00000000802026d2                set_log_level
+                0x00000000802026e4                _print
+                0x0000000080202702                test_log
+                0x0000000080202720                rcore_console_putchar
+                0x0000000080202744                rcore_console_puts
+ *fill*         0x0000000080202786        0x2 
+ .text          0x0000000080202788      0x3a8 ../../lib/kernel-context-local/librcore_kernel_context_local.a(kernel_context_local.c.obj)
+                0x0000000080202834                rcore_local_context_empty
+                0x0000000080202876                rcore_local_context_user
+                0x00000000802028c2                rcore_local_context_set_sp
+                0x00000000802028f2                rcore_local_context_get_a
+                0x0000000080202920                rcore_local_context_set_a
+                0x0000000080202956                rcore_local_context_move_next
+                0x000000008020297c                rcore_local_context_execute_naked
+                0x0000000080202a9e                rcore_local_context_execute
+
+.rodata         0x0000000080203000      0x51b
+                0x0000000080203000                __rodata = .
+ *(.rodata .rodata.*)
+ .rodata        0x0000000080203000      0x299 CMakeFiles/rcore_ch5_kernel.dir/src/main.c.obj
+ *fill*         0x0000000080203299        0x7 
+ .rodata        0x00000000802032a0      0x268 ../../lib/linker/librcore_linker.a(linker.c.obj)
+ .rodata        0x0000000080203508       0x13 ../../lib/console/librcore_console.a(console.c.obj)
+ *(.srodata .srodata.*)
+
+.rela.dyn       0x0000000080203520        0x0
+ .rela.text.entry
+                0x0000000080203520        0x0 CMakeFiles/rcore_ch5_kernel.dir/src/main.c.obj
+ .rela.rodata   0x0000000080203520        0x0 CMakeFiles/rcore_ch5_kernel.dir/src/main.c.obj
+
+.data           0x0000000080204000   0xef1522
+                0x0000000080204000                __data = .
+ *(.data .data.*)
+ .data          0x0000000080204000        0x0 CMakeFiles/rcore_ch5_kernel.dir/src/main.c.obj
+ .data          0x0000000080204000        0x0 CMakeFiles/rcore_ch5_kernel.dir/src/start.S.obj
+ .data          0x0000000080204000        0x0 CMakeFiles/rcore_ch5_kernel.dir/__/__/cmake/rt_memory.c.obj
+ .data          0x0000000080204000   0xef1522 CMakeFiles/rcore_ch5_kernel.dir/generated/app.asm.S.obj
+                0x0000000080204000                apps
+                0x00000000810f54a8                app_names
+ .data          0x00000000810f5522        0x0 ../../lib/linker/librcore_linker.a(linker.c.obj)
+ .data          0x00000000810f5522        0x0 ../../lib/linker/librcore_linker.a(app.c.obj)
+ .data          0x00000000810f5522        0x0 ../../lib/console/librcore_console.a(console.c.obj)
+ .data          0x00000000810f5522        0x0 ../../lib/kernel-context-local/librcore_kernel_context_local.a(kernel_context_local.c.obj)
+ *(.sdata .sdata.*)
+
+.bss            0x00000000810f5528        0x0
+                0x00000000810f5528                __sbss = .
+ *(.bss .bss.*)
+ .bss           0x00000000810f5528        0x0 CMakeFiles/rcore_ch5_kernel.dir/src/main.c.obj
+ .bss           0x00000000810f5528        0x0 CMakeFiles/rcore_ch5_kernel.dir/src/start.S.obj
+ .bss           0x00000000810f5528        0x0 CMakeFiles/rcore_ch5_kernel.dir/__/__/cmake/rt_memory.c.obj
+ .bss           0x00000000810f5528        0x0 CMakeFiles/rcore_ch5_kernel.dir/generated/app.asm.S.obj
+ .bss           0x00000000810f5528        0x0 ../../lib/linker/librcore_linker.a(linker.c.obj)
+ .bss           0x00000000810f5528        0x0 ../../lib/linker/librcore_linker.a(app.c.obj)
+ .bss           0x00000000810f5528        0x0 ../../lib/console/librcore_console.a(console.c.obj)
+ .bss           0x00000000810f5528        0x0 ../../lib/kernel-context-local/librcore_kernel_context_local.a(kernel_context_local.c.obj)
+ *(.sbss .sbss.*)
+                0x00000000810f5528                __ebss = .
+
+.boot           0x00000000810f6000     0x4000
+                0x00000000810f6000                __boot = .
+ *(.boot.stack)
+ .boot.stack    0x00000000810f6000     0x4000 CMakeFiles/rcore_ch5_kernel.dir/src/start.S.obj
+                0x00000000810fa000                __end = .
+OUTPUT(../../artifacts/ch5.elf elf64-littleriscv)
+
+.comment        0x0000000000000000       0x2a
+ .comment       0x0000000000000000       0x2a CMakeFiles/rcore_ch5_kernel.dir/src/main.c.obj
+                                         0x2b (size before relaxing)
+ .comment       0x000000000000002a       0x2b CMakeFiles/rcore_ch5_kernel.dir/__/__/cmake/rt_memory.c.obj
+ .comment       0x000000000000002a       0x2b ../../lib/linker/librcore_linker.a(linker.c.obj)
+ .comment       0x000000000000002a       0x2b ../../lib/linker/librcore_linker.a(app.c.obj)
+ .comment       0x000000000000002a       0x2b ../../lib/console/librcore_console.a(console.c.obj)
+ .comment       0x000000000000002a       0x2b ../../lib/kernel-context-local/librcore_kernel_context_local.a(kernel_context_local.c.obj)
+
+.riscv.attributes
+                0x0000000000000000       0x39
+ .riscv.attributes
+                0x0000000000000000       0x39 CMakeFiles/rcore_ch5_kernel.dir/src/main.c.obj
+ .riscv.attributes
+                0x0000000000000039       0x33 CMakeFiles/rcore_ch5_kernel.dir/src/start.S.obj
+ .riscv.attributes
+                0x000000000000006c       0x35 CMakeFiles/rcore_ch5_kernel.dir/__/__/cmake/rt_memory.c.obj
+ .riscv.attributes
+                0x00000000000000a1       0x33 CMakeFiles/rcore_ch5_kernel.dir/generated/app.asm.S.obj
+ .riscv.attributes
+                0x00000000000000d4       0x35 ../../lib/linker/librcore_linker.a(linker.c.obj)
+ .riscv.attributes
+                0x0000000000000109       0x35 ../../lib/linker/librcore_linker.a(app.c.obj)
+ .riscv.attributes
+                0x000000000000013e       0x35 ../../lib/console/librcore_console.a(console.c.obj)
+ .riscv.attributes
+                0x0000000000000173       0x39 ../../lib/kernel-context-local/librcore_kernel_context_local.a(kernel_context_local.c.obj)

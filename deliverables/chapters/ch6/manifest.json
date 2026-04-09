@@ -1,0 +1,38 @@
+{
+  "chapter": "ch6",
+  "success": true,
+  "duration_seconds": 81.359,
+  "terminated": true,
+  "timed_out": false,
+  "cases": [
+    "00hello_world",
+    "01store_fault",
+    "02power",
+    "03priv_inst",
+    "04priv_csr",
+    "12forktest",
+    "13forktree",
+    "14forktest2",
+    "15matrix",
+    "user_shell",
+    "initproc",
+    "filetest_simple",
+    "cat_filea"
+  ],
+  "case_count": 13,
+  "ended_at": "2026-04-03T08:20:16.244053+00:00",
+  "duration_text": "1525.632 秒",
+  "conclusion": "已在 `new-phase-c` 内部完成 `ch6` 的手工收敛，现有 C 版章节内核可以稳定跑通本章用户态测例，并正确覆盖文件创建、写入、重开读取与跨进程读取语义。",
+  "source_dir": "trial-workspaces/ch6/workspace/c-port",
+  "deliverable_dir": "deliverables/chapters/ch6",
+  "files": [
+    "ch6.bin",
+    "ch6.elf",
+    "ch6.map"
+  ],
+  "sha256": {
+    "ch6.bin": "f5caadbed67bfb9a4d1ebf4f81b483da7750d22ec7027ed29dd6a1f0a98b7010",
+    "ch6.elf": "ab36f3727d73eb7dab9ce92d351f1c31eb38b39df6868b73e1af40b77862f061",
+    "ch6.map": "a0cbd5575a770320b1d5b776b7078ab9ca7b2c7d7a15232e7ab47efe7d1f654c"
+  }
+}

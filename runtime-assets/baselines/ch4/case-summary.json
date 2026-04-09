@@ -1,0 +1,96 @@
+{
+  "chapter": "ch4",
+  "success": true,
+  "match_mode": "unordered",
+  "baseline_repo": "embedded-runtime-assets",
+  "baseline_repo_kind": "embedded",
+  "cases": [
+    {
+      "name": "00hello_world",
+      "order": 0,
+      "patterns": [
+        "Hello, world!"
+      ]
+    },
+    {
+      "name": "01store_fault",
+      "order": 1,
+      "patterns": [
+        "Into Test store_fault, we will insert an invalid store operation...",
+        "Kernel should kill this application!"
+      ]
+    },
+    {
+      "name": "02power",
+      "order": 2,
+      "patterns": [
+        "Test power OK!"
+      ]
+    },
+    {
+      "name": "03priv_inst",
+      "order": 3,
+      "patterns": [
+        "Kernel should kill this application!",
+        "Try to execute privileged instruction in U Mode"
+      ]
+    },
+    {
+      "name": "04priv_csr",
+      "order": 4,
+      "patterns": [
+        "Kernel should kill this application!",
+        "Try to access privileged CSR in U Mode"
+      ]
+    },
+    {
+      "name": "05write_a",
+      "order": 5,
+      "patterns": [
+        "Test write_a OK!"
+      ]
+    },
+    {
+      "name": "06write_b",
+      "order": 6,
+      "patterns": [
+        "Test write_b OK!"
+      ]
+    },
+    {
+      "name": "07write_c",
+      "order": 7,
+      "patterns": [
+        "Test write_c OK!"
+      ]
+    },
+    {
+      "name": "08power_3",
+      "order": 8,
+      "patterns": [
+        "Test power_3 OK!"
+      ]
+    },
+    {
+      "name": "09power_5",
+      "order": 9,
+      "patterns": [
+        "Test power_5 OK!"
+      ]
+    },
+    {
+      "name": "10power_7",
+      "order": 10,
+      "patterns": [
+        "Test power_7 OK!"
+      ]
+    },
+    {
+      "name": "11sleep",
+      "order": 11,
+      "patterns": [
+        "Test sleep OK!"
+      ]
+    }
+  ]
+}

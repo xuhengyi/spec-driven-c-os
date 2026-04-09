@@ -1,0 +1,37 @@
+{
+  "chapter": "ch4",
+  "success": true,
+  "duration_seconds": 0.614,
+  "terminated": false,
+  "timed_out": false,
+  "cases": [
+    "00hello_world",
+    "01store_fault",
+    "02power",
+    "03priv_inst",
+    "04priv_csr",
+    "05write_a",
+    "06write_b",
+    "07write_c",
+    "08power_3",
+    "09power_5",
+    "10power_7",
+    "11sleep"
+  ],
+  "case_count": 12,
+  "ended_at": "2026-04-03T06:27:08Z",
+  "duration_text": "9100.573 秒",
+  "conclusion": "已基于 `new-phase-c` 内部 spec、测试和上一章代码完成 `ch4` 的 `spec -> C` 收敛，测例稳定通过。",
+  "source_dir": "trial-workspaces/ch4/workspace/c-port",
+  "deliverable_dir": "deliverables/chapters/ch4",
+  "files": [
+    "ch4.bin",
+    "ch4.elf",
+    "ch4.map"
+  ],
+  "sha256": {
+    "ch4.bin": "114b543b7341d4f4f682d840fb49d8f35d357f3ef3d87f4de139d1e7e13e324e",
+    "ch4.elf": "97c035723957dfd93478e3d0742788fc51bd9f7a971101ae21261eba6ab81d6c",
+    "ch4.map": "1a31ceb66a71e89080908084acccec84ee31cbb7831bae5b1f8001b676b842ae"
+  }
+}

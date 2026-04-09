@@ -1,0 +1,37 @@
+{
+  "chapter": "ch3",
+  "success": true,
+  "duration_seconds": 0.476,
+  "terminated": false,
+  "timed_out": false,
+  "cases": [
+    "00hello_world",
+    "01store_fault",
+    "02power",
+    "03priv_inst",
+    "04priv_csr",
+    "05write_a",
+    "06write_b",
+    "07write_c",
+    "08power_3",
+    "09power_5",
+    "10power_7",
+    "11sleep"
+  ],
+  "case_count": 12,
+  "ended_at": "2026-04-03T04:04:55.658743+00:00",
+  "duration_text": "0.000 秒",
+  "conclusion": "章节 judge 已确认本章节通过。",
+  "source_dir": "trial-workspaces/ch3/workspace/c-port",
+  "deliverable_dir": "deliverables/chapters/ch3",
+  "files": [
+    "ch3.bin",
+    "ch3.elf",
+    "ch3.map"
+  ],
+  "sha256": {
+    "ch3.bin": "a4fa000cf66ed252002600dc3953c1ac482baa652ee2678d467bedaa3b8d07ec",
+    "ch3.elf": "fa0dbcd6de716461b229a022a7eb02a4dc8f2ac2da09984e065a9579a160968d",
+    "ch3.map": "28526c5cd2cc3ea2881be37050538f04860db72884866a34a963d50837018473"
+  }
+}

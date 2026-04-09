@@ -1,0 +1,7 @@
+add_library(rcore_kernel_context_local STATIC
+    kernel_context_local.c
+)
+
+rcore_target_common(rcore_kernel_context_local)
+target_include_directories(rcore_kernel_context_local PRIVATE ${CMAKE_CURRENT_SOURCE_DIR})
+rcore_apply_feature_flags(rcore_kernel_context_local RCORE_FEATURE_KERNEL)

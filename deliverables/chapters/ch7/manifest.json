@@ -1,0 +1,42 @@
+{
+  "chapter": "ch7",
+  "success": true,
+  "duration_seconds": 81.5,
+  "terminated": true,
+  "timed_out": false,
+  "cases": [
+    "00hello_world",
+    "01store_fault",
+    "02power",
+    "03priv_inst",
+    "04priv_csr",
+    "12forktest",
+    "13forktree",
+    "14forktest2",
+    "15matrix",
+    "user_shell",
+    "initproc",
+    "filetest_simple",
+    "cat_filea",
+    "sig_simple",
+    "sig_simple2",
+    "sig_ctrlc",
+    "sig_tests"
+  ],
+  "case_count": 17,
+  "ended_at": "2026-04-03T11:00:31Z",
+  "duration_text": "8808.276 秒",
+  "conclusion": "ch7 已由人工介入收敛完成，并在最终人工复核中通过全部用户态测例。",
+  "source_dir": "trial-workspaces/ch7/workspace/c-port",
+  "deliverable_dir": "deliverables/chapters/ch7",
+  "files": [
+    "ch7.bin",
+    "ch7.elf",
+    "ch7.map"
+  ],
+  "sha256": {
+    "ch7.bin": "0fc934476bc09add19120cf0b7830398211e86f5d868eaca9b18586f3f1cca91",
+    "ch7.elf": "5ad0b7120b030fcf63084e5d875dfb568873f12a54fc5a29a7de4940154169ae",
+    "ch7.map": "43d0380d92704b9dea9005a8d98163748c08bf61bfd17a5b863c01621aa9f98e"
+  }
+}

@@ -1,0 +1,4 @@
+#ifndef RCORE_SYSCALL_ABI_TIME_H
+#define RCORE_SYSCALL_ABI_TIME_H
+
+#endif

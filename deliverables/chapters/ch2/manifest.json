@@ -1,0 +1,30 @@
+{
+  "chapter": "ch2",
+  "success": true,
+  "duration_seconds": 0.168,
+  "terminated": false,
+  "timed_out": false,
+  "cases": [
+    "00hello_world",
+    "01store_fault",
+    "02power",
+    "03priv_inst",
+    "04priv_csr"
+  ],
+  "case_count": 5,
+  "ended_at": "2026-04-03T03:39:20.931067+00:00",
+  "duration_text": "0.000 秒",
+  "conclusion": "章节 judge 已确认本章节通过。",
+  "source_dir": "trial-workspaces/ch2/workspace/c-port",
+  "deliverable_dir": "deliverables/chapters/ch2",
+  "files": [
+    "ch2.bin",
+    "ch2.elf",
+    "ch2.map"
+  ],
+  "sha256": {
+    "ch2.bin": "e5d7706a2a8d22b0b30c08ff6002980c5559e9b18a65a8e785502f6da81e5596",
+    "ch2.elf": "1de1e9c2c107b6f32a28b19e1bddbeb730ad6e05e20f26ef087da044ac68ccb5",
+    "ch2.map": "2f2aa947ebabecfae13049437afd84e0075e70809b4a4e65fb18c153361f09d7"
+  }
+}

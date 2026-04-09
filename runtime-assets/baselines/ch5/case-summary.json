@@ -1,0 +1,97 @@
+{
+  "chapter": "ch5",
+  "success": true,
+  "match_mode": "ordered",
+  "baseline_repo": "embedded-runtime-assets",
+  "baseline_repo_kind": "embedded",
+  "cases": [
+    {
+      "name": "00hello_world",
+      "order": 0,
+      "patterns": [
+        "00hello_world",
+        "Hello, world!"
+      ]
+    },
+    {
+      "name": "01store_fault",
+      "order": 1,
+      "patterns": [
+        "01store_fault",
+        "Into Test store_fault, we will insert an invalid store operation...",
+        "Kernel should kill this application!"
+      ]
+    },
+    {
+      "name": "02power",
+      "order": 2,
+      "patterns": [
+        "02power",
+        "Test power OK!"
+      ]
+    },
+    {
+      "name": "03priv_inst",
+      "order": 3,
+      "patterns": [
+        "03priv_inst",
+        "Try to execute privileged instruction in U Mode",
+        "Kernel should kill this application!"
+      ]
+    },
+    {
+      "name": "04priv_csr",
+      "order": 4,
+      "patterns": [
+        "04priv_csr",
+        "Try to access privileged CSR in U Mode",
+        "Kernel should kill this application!"
+      ]
+    },
+    {
+      "name": "12forktest",
+      "order": 5,
+      "patterns": [
+        "12forktest",
+        "forktest pass."
+      ]
+    },
+    {
+      "name": "13forktree",
+      "order": 6,
+      "patterns": [
+        "13forktree"
+      ]
+    },
+    {
+      "name": "14forktest2",
+      "order": 7,
+      "patterns": [
+        "14forktest2",
+        "forktest2 test passed!"
+      ]
+    },
+    {
+      "name": "15matrix",
+      "order": 8,
+      "patterns": [
+        "15matrix"
+      ]
+    },
+    {
+      "name": "user_shell",
+      "order": 9,
+      "patterns": [
+        "Rust user shell",
+        ">> "
+      ]
+    },
+    {
+      "name": "initproc",
+      "order": 10,
+      "patterns": [
+        "Loaded initproc"
+      ]
+    }
+  ]
+}

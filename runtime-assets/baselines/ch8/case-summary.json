@@ -1,0 +1,201 @@
+{
+  "chapter": "ch8",
+  "success": true,
+  "match_mode": "ordered",
+  "baseline_repo": "embedded-runtime-assets",
+  "baseline_repo_kind": "embedded",
+  "cases": [
+    {
+      "name": "00hello_world",
+      "order": 0,
+      "patterns": [
+        "00hello_world",
+        "Hello, world!"
+      ]
+    },
+    {
+      "name": "01store_fault",
+      "order": 1,
+      "patterns": [
+        "01store_fault",
+        "Into Test store_fault, we will insert an invalid store operation...",
+        "Kernel should kill this application!"
+      ]
+    },
+    {
+      "name": "02power",
+      "order": 2,
+      "patterns": [
+        "02power",
+        "Test power OK!"
+      ]
+    },
+    {
+      "name": "03priv_inst",
+      "order": 3,
+      "patterns": [
+        "03priv_inst",
+        "Try to execute privileged instruction in U Mode",
+        "Kernel should kill this application!"
+      ]
+    },
+    {
+      "name": "04priv_csr",
+      "order": 4,
+      "patterns": [
+        "04priv_csr",
+        "Try to access privileged CSR in U Mode",
+        "Kernel should kill this application!"
+      ]
+    },
+    {
+      "name": "12forktest",
+      "order": 5,
+      "patterns": [
+        "12forktest",
+        "forktest pass."
+      ]
+    },
+    {
+      "name": "13forktree",
+      "order": 6,
+      "patterns": [
+        "13forktree"
+      ]
+    },
+    {
+      "name": "14forktest2",
+      "order": 7,
+      "patterns": [
+        "14forktest2",
+        "forktest2 test passed!"
+      ]
+    },
+    {
+      "name": "15matrix",
+      "order": 8,
+      "patterns": [
+        "15matrix",
+        "fork ok.",
+        "matrix passed."
+      ]
+    },
+    {
+      "name": "user_shell",
+      "order": 9,
+      "patterns": [
+        "Rust user shell",
+        ">> "
+      ]
+    },
+    {
+      "name": "initproc",
+      "order": 10,
+      "patterns": [
+        "Rust user shell"
+      ]
+    },
+    {
+      "name": "filetest_simple",
+      "order": 11,
+      "patterns": [
+        "filetest_simple",
+        "file_test passed!",
+        "Hello, world!"
+      ]
+    },
+    {
+      "name": "cat_filea",
+      "order": 12,
+      "patterns": [
+        "cat_filea"
+      ]
+    },
+    {
+      "name": "sig_simple",
+      "order": 13,
+      "patterns": [
+        "sig_simple",
+        "signal_simple: sigaction",
+        "signal_simple: kill"
+      ]
+    },
+    {
+      "name": "sig_simple2",
+      "order": 14,
+      "patterns": [
+        "sig_simple2",
+        "signal_simple2: child sigaction",
+        "signal_simple2: parent kill child"
+      ]
+    },
+    {
+      "name": "sig_ctrlc",
+      "order": 15,
+      "patterns": [
+        "sig_ctrlc",
+        "sig_ctrlc starting....  Press 'ctrl-c' or 'ENTER'  will quit.",
+        "sig_ctrlc: sigaction"
+      ]
+    },
+    {
+      "name": "sig_tests",
+      "order": 16,
+      "patterns": [
+        "sig_tests",
+        "user_sig_test_failsignum",
+        "user_sig_test_kill"
+      ]
+    },
+    {
+      "name": "threads",
+      "order": 17,
+      "patterns": [
+        "threads",
+        "threads test========",
+        "create end"
+      ]
+    },
+    {
+      "name": "threads_arg",
+      "order": 18,
+      "patterns": [
+        "threads_arg",
+        "main thread exited."
+      ]
+    },
+    {
+      "name": "mpsc_sem",
+      "order": 19,
+      "patterns": [
+        "mpsc_sem",
+        "mpsc_sem passed!"
+      ]
+    },
+    {
+      "name": "sync_sem",
+      "order": 20,
+      "patterns": [
+        "sync_sem",
+        "Second want to continue,but need to wait first",
+        "First work and wakeup Second"
+      ]
+    },
+    {
+      "name": "race_adder_mutex_blocking",
+      "order": 21,
+      "patterns": [
+        "race_adder_mutex_blocking"
+      ]
+    },
+    {
+      "name": "test_condvar",
+      "order": 22,
+      "patterns": [
+        "test_condvar",
+        "Second want to continue,but need to wait A=1",
+        "First work, Change A --> 1 and wakeup Second"
+      ]
+    }
+  ]
+}

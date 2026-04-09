@@ -1,0 +1,48 @@
+{
+  "chapter": "ch8",
+  "success": true,
+  "duration_seconds": 181.287,
+  "terminated": true,
+  "timed_out": false,
+  "cases": [
+    "00hello_world",
+    "01store_fault",
+    "02power",
+    "03priv_inst",
+    "04priv_csr",
+    "12forktest",
+    "13forktree",
+    "14forktest2",
+    "15matrix",
+    "user_shell",
+    "initproc",
+    "filetest_simple",
+    "cat_filea",
+    "sig_simple",
+    "sig_simple2",
+    "sig_ctrlc",
+    "sig_tests",
+    "threads",
+    "threads_arg",
+    "mpsc_sem",
+    "sync_sem",
+    "race_adder_mutex_blocking",
+    "test_condvar"
+  ],
+  "case_count": 23,
+  "ended_at": "2026-04-03T11:00:31Z",
+  "duration_text": "5283.067 秒",
+  "conclusion": "ch8 已由人工介入收敛完成，并在最终人工复核中通过全部用户态测例。",
+  "source_dir": "trial-workspaces/ch8/workspace/c-port",
+  "deliverable_dir": "deliverables/chapters/ch8",
+  "files": [
+    "ch8.bin",
+    "ch8.elf",
+    "ch8.map"
+  ],
+  "sha256": {
+    "ch8.bin": "85366005cef9537ccf34446fff25cd28ec0193db6c8c11ed8dececbbcce0a169",
+    "ch8.elf": "7674c75f8c77904bc7093fed23856ff04b5cb86f36cf547ca688990b755bea67",
+    "ch8.map": "915e9bd2c261a184a28f097639f7a68bb988a6a9372d78718a307fb5e9822d96"
+  }
+}
