@@ -1,6 +1,6 @@
-# new-phase-c
+# spec-driven-c-os
 
-`new-phase-c` 是一个面向教学操作系统实验的 Phase C 仓库。它把规格驱动的章节目标、C 语言章节内核实现、运行时资产和最终产物放进同一个代码库，用来验证一条 `spec -> C kernel` 的完整路径。
+`spec-driven-c-os` 是一个面向教学操作系统实验的仓库，它把规格驱动的章节目标、C 语言章节内核实现、运行时资产和最终产物放进同一个代码库，用来验证一条 `spec -> C kernel` 的完整路径。
 
 这个项目做了三件事：
 
@@ -120,7 +120,7 @@ qemu-system-riscv64 \
 ## 仓库结构
 
 ```text
-new-phase-c/
+phase-c/
 ├── spec/
 ├── user/
 ├── runtime-assets/
@@ -134,4 +134,4 @@ new-phase-c/
 
 ## License
 
-Licensed under `WTFPL`. See [LICENSE](./LICENSE).
+Licensed under the MIT License. See [LICENSE](./LICENSE).
