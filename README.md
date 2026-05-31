@@ -19,6 +19,8 @@
 - `trial-workspaces/chX/workspace/c-port/`：每章最终保留的 C 源码
 - `runtime-assets/`：构建和验证所需的固定运行时资产
 - `deliverables/chapters/chX/`：每章最终导出的 `bin/elf/map`
+- `experiments/v2/`：V2 紧凑 COS 章节快照、`spec-v2`、生成 bundle 和共享用户态测例
+- `docs/v2-cos-lineage.md`：记录 V2 尝试和本仓库正式 C 版本的关系
 
 ## 这个项目怎么做
 
@@ -28,6 +30,17 @@
 2. 在 `trial-workspaces/chX/workspace/c-port/` 中维护章节级 C 内核实现
 3. 通过 `agent.cli verify-chapter chX` 执行章节验证
 4. 将最终通过版本导出到 `deliverables/chapters/chX/`
+
+## V2 尝试
+
+`experiments/v2/` 中保留了一套按 `spec-v2` 和章节 bundle 生成的 COS
+`ch2` 到 `ch8` QEMU/RISC-V 章节快照。它们是论文一致性实验的 V2
+证据，用于说明中性 spec 可以驱动紧凑 C 实现通过共同 base 测例；本仓库的
+正式 Phase C 主线仍是 cleaned bundles、CMake 构建、runtime assets、
+chapter deliverables 和验证 CLI。
+
+两者的详细关系、测试矩阵和 bundle hash 见
+[`docs/v2-cos-lineage.md`](docs/v2-cos-lineage.md)。
 
 验证时会使用仓库内置的：
 
@@ -134,4 +147,9 @@ phase-c/
 
 ## License
 
-Licensed under the MIT License. See [LICENSE](./LICENSE).
+Repository-specific Phase C code is licensed under the MIT License. See
+[LICENSE](./LICENSE).
+
+Archived or third-party inputs may carry their own package metadata. In
+particular, check `experiments/v2/**/Cargo.toml` before redistributing the V2
+archive under a single license statement.

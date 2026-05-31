@@ -14,8 +14,18 @@ SOURCE_ARTIFACT_ROOT = ROOT / "artifacts" / "state" / "manual-verify-builds"
 SUMMARY_PATH = ROOT / "artifacts" / "state" / "manual-verification-summary.json"
 REPORT_ROOT = ROOT / "trial-workspaces"
 
+
+def _path_marker(marker: bytes, length: int) -> bytes:
+    if len(marker) > length:
+        return marker[:length]
+    if marker.endswith(b"/"):
+        return marker[:-1] + (b"_" * (length - len(marker))) + b"/"
+    return marker + (b"_" * (length - len(marker)))
+
+
+HOME_PREFIX = str(Path.home()).encode() + b"/"
 BYTE_REPLACEMENTS = [
-    (b"/home/xu-hy22/", b"/repo-root___/"),
+    (HOME_PREFIX, _path_marker(b"/repo-root/", len(HOME_PREFIX))),
     (b"Graduation/", b"workspace_/"),
     (b"new-phase-c/", b"public-repo/"),
 ]
